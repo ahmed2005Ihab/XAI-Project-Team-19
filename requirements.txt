@@ -1,0 +1,34 @@
+# RSNA Pneumonia Detection — XAI Project
+# Python 3.10+ recommended
+# Install: pip install -r requirements.txt
+
+# ── Core data & numerics ──────────────────────────────────────────────────
+numpy==1.26.4
+pandas==2.2.2
+
+# ── Machine learning ─────────────────────────────────────────────────────
+scikit-learn==1.4.2
+
+# ── Deep learning (CUDA 12.1 — matches your RTX 3050 setup) ──────────────
+# If you need a different CUDA version, replace cu121 with your version:
+# CUDA 11.8 → cu118 | CUDA 12.4 → cu124 | CPU only → --index-url https://download.pytorch.org/whl/cpu
+torch==2.5.1+cu121
+torchvision==0.20.1+cu121
+--extra-index-url https://download.pytorch.org/whl/cu121
+
+# ── Medical imaging ───────────────────────────────────────────────────────
+pydicom==2.4.4
+
+# ── Computer vision ───────────────────────────────────────────────────────
+opencv-python==4.10.0.84
+
+# ── Visualisation ─────────────────────────────────────────────────────────
+matplotlib==3.9.2
+seaborn==0.13.2
+
+# ── Progress bars ─────────────────────────────────────────────────────────
+tqdm==4.66.5
+
+# ── Jupyter (VS Code notebook support) ───────────────────────────────────
+ipykernel==6.29.5
+ipywidgets==8.1.5
